@@ -53,18 +53,7 @@ amaflags = billing
 SIP_FILE = "sip.conf"
 
 # Get input numbers
-selected_number = 0
-while True:
-    try:
-        selected_number = int(input("Enter an integer 1-99: "))
-    except ValueError:
-        print("Please enter a valid number 1-99")
-        continue
-    if selected_number in range(1, 100):
-        print(f'You entered: {selected_number}')
-        break
-    else:
-        print('The integer must be in the range 1-99')
+selected_number = 3
 
 # Generate sip.conf contents
 sip_content = SIP_CONF_GENERAL_TEMPLATE
