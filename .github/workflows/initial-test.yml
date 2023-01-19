@@ -41,4 +41,4 @@ jobs:
         pip install pylint==2.11.1
     - name: Lint with pylint
       run: |
-        python sip.conf.py 3
+        python sip.conf.py
