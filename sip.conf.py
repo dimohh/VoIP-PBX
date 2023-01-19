@@ -52,7 +52,7 @@ amaflags = billing
 
 SIP_FILE = "sip.conf"
 
-# Get input numbers
+# Get input number
 selected_number = 0
 while True:
     try:
@@ -68,7 +68,7 @@ while True:
 
 # Generate sip.conf contents
 sip_content = SIP_CONF_GENERAL_TEMPLATE
-for number in range(0,selected_number):
+for number in range(0,selected_number+1):
     phone_number = "10" + str(number)
     number_section = SIP_CONF_NUMBER_TEMPLATE.replace("PHONE_NUMBER", phone_number)
     sip_content += number_section
