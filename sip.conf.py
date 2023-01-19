@@ -52,7 +52,7 @@ amaflags = billing
 
 SIP_FILE = "sip.conf"
 
-# Get input number
+# Get input numbers
 selected_number = 0
 while True:
     try:
