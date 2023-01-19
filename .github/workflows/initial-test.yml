@@ -1,0 +1,44 @@
+name: Github-action-practice
+
+on:
+  push:
+    branches: [ feature1 ]
+    paths:
+    - 'python_lint.py'
+    - 'sip.conf.py'
+    - 'sip.conf'
+    
+jobs:
+  integration-test:
+    runs-on: ubuntu-latest
+    container:
+      image: python:3.9-alpine
+      options: --cpus 1
+    steps:
+       - name: integration test
+         uses: actions/checkout@v2 
+       - name: integration test
+         run: python sip.conf.py
+      
+      
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Test which OS the runner is using
+      run: echo "This job is now running on ${{ runner.os }} server hosted by Github!"
+    - name: Which branch is checked out 
+      run: echo "The name of the branch is ${{ github.ref }} in repository ${{ github.repository }}"
+    - name: Check out repository code
+      uses: actions/checkout@v2
+    - run: echo "The ${{ github.repository }} has been clonned to the runner."
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pylint==2.11.1
+    - name: Lint with pylint
+      run: |
+        python sip.conf.py
