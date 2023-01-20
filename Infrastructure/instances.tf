@@ -47,6 +47,10 @@ resource "aws_instance" "asterisk_ec2" {
   subnet_id         = aws_subnet.asterisk_subnet_a.id
 
   key_name = "asterisk"
+  
+  vpc_security_group_ids = [
+    aws_security_group.asterisk_sg.id
+  ]
 
   tags = {
     "Name" = "asterisk-ec2"
