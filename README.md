@@ -1,6 +1,6 @@
 ![alt text](https://github.com/dimohh/VoIP-PBX/blob/main/logo_v1.1.png)
 # VoIP-PBX Project
-This is a project for implementing an open source VoIP PBX based on Asterisk. The implementation will have a semi config generation automation and will be pushed in AWS as IaC. The project is created for usage in AWS. If you want to use а different provider you will need to edit the infrastructure files.
+This is a project for implementing an open source VoIP PBX based on Asterisk. The implementation will have a semi config generation automation and will be pushed in AWS as IaC. The project is created for usage in AWS. If you want to use а different provider you will need to edit the infrastructure files. We will be using pre build image that I already created via the EC2 image builder. The image is based on Ubuntu 20.04 LTS with Asterisk 16.2.1 .
 
 **Instructions**
   1. In **sip.conf.py** change the variable "**selected_number**" with integer number between 1 and 99 which represents the number of IP Phones you want to be created. This will generate the sip.conf file which is the Asterisk config file that you will need at a later step.
