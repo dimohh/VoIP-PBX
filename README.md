@@ -1,12 +1,12 @@
 ![alt text](https://github.com/dimohh/VoIP-PBX/blob/main/logo_v1.1.png)
 # VoIP-PBX Project
-This is project for implementing open source VoIP PBX based on Asterisk. The implementation will have semi config generation automation and will be pushed in AWS as IaC. The project is created for usage in AWS. If you want to use different provider you need to edit the infrastructure files.
+This is a project for implementing an open source VoIP PBX based on Asterisk. The implementation will have a semi config generation automation and will be pushed in AWS as IaC. The project is created for usage in AWS. If you want to use а different provider you will need to edit the infrastructure files.
 
 **Instructions**
-  1. In **sip.conf.py** change variable "**selected_number**" with integer number betwenne 1 and 99 which represents the number of IP Phones you want to be created. This will generate the sip.conf which is the Asterisk config file you will need at later step.
-  2. In your **AWS** account create a Cloud9 instance which will be used for the infrastructiore deplyment via Terraform.
-  3. In you **AWS** account in **Network & Security>Key Pairs** create new key pair with RSA, .pem format and with name **asterisk**. Download the **.pem**      file you will need it to SSH to the EC2 istnace.
-  4. Open a console to the Cloud9 instace.
+  1. In **sip.conf.py** change the variable "**selected_number**" with integer number between 1 and 99 which represents the number of IP Phones you want to be created. This will generate the sip.conf file which is the Asterisk config file that you will need at a later step.
+  2. In your **AWS** account create a Cloud9 instance which will be used for the infrastructure deplyment via Terraform.
+  3. In your **AWS** account in **Network & Security>Key Pairs** create a new key pair with RSA, .pem format and with name **asterisk**. Download the **.pem**      file you will need it to SSH to the EC2 istnace.
+  4. Open a console to the **Cloud9** instace.
   5. Copy the repository with **git clone** **https://github.com/dimohh/VoIP-PBX.git**
   6. Open directory **VoIP-PBX/Infrastructure/** 
   7. Do command **terraform init** to initialize this directory for Terraform.
