@@ -1,4 +1,4 @@
-![alt text](https://github.com/dimohh/VoIP-PBX/blob/main/logo_v1.png)
+![alt text](https://github.com/dimohh/VoIP-PBX/blob/main/logo_v1.1.png)
 # VoIP-PBX Project
 This is project for implementing open source VoIP PBX based on Asterisk. The implementation will have semi config generation automation and will be pushed in AWS as IaC. The project is created for usage in AWS. If you want to use different provider you need to edit the infrastructure files.
 
