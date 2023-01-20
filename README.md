@@ -23,4 +23,7 @@ This is project for implementing open source VoIP PBX based on Asterisk. The imp
       - sip reload
   13. Open your SIP Softphone and configure the user and password from sip.conf. Do this for every user.
   
+  
+  
+ ![alt text](https://github.com/dimohh/VoIP-PBX/blob/main/sipsoftphone.png) 
  
