@@ -21,7 +21,7 @@ This is project for implementing open source VoIP PBX based on Asterisk. The imp
       - Copy all the created sip phones configuretions from sip.conf from step 1. They will start with [100] for the first sip phone, [101] for the second and so on. Paste those at the bottom of /etc/asterisk/sip.conf and save.
       - asterisk -rvvv
       - sip reload
-  13. Open your SIP Softphone and configure the user and password from sip.conf. Do this for every user.
+  13. Open your SIP Softphone and configure the user and password from sip.conf. Do this for every user. ****Enjoy !****
   
   
   
