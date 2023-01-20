@@ -12,7 +12,7 @@ callcounter=yes
 srvlookup = no
 callevents=yes
 
-localnet=10.169.10.0/255.255.255.0
+localnet=10.0.0.0/255.255.255.0
 
 allowsubscribe = yes
 notifyringing = yes
