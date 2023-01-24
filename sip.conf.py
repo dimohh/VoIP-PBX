@@ -53,7 +53,7 @@ amaflags = billing
 SIP_FILE = "sip.conf"
 
 # Get input number
-selected_number = 3
+selected_number = 4
 
 # Generate sip.conf contents
 sip_content = SIP_CONF_GENERAL_TEMPLATE
